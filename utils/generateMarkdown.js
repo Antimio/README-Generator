@@ -27,7 +27,7 @@ ${data.Usage}
   
 ## License
   
-This project is licensed under the ${data.License} license.
+This project is licensed under the ${data.License}.
   
 ## Contributing
   
@@ -35,7 +35,7 @@ ${data.Contributing}
   
 ## Tests
   
-${data.Tests}
+${data.App_tests}
   
 ## Questions
   

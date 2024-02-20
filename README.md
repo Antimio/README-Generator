@@ -34,7 +34,7 @@ Other developers can go onto the developer's git repository (which is public), c
   
 ## Tests
   
-undefined
+This app can be tested by downloadig the code, as instructed above, and runing the code in node while trying different types of input.
   
 ## Questions
   
