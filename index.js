@@ -55,7 +55,15 @@ const questions = [{
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) { //This funtion will take the name of the file the user wants to create (fileName) and the text (data) that it is to be copied onto said file.
+
+    fs.writeFile(path.join(process.cwd(), fileName), data, err => { //This function is part of the "fs" package and will create the actual file into the current working directory. If there is an error, the console will log it. The fileName and data will be fed to it from the parent function (writeToFile).
+        if (err) {
+            return console.log(err);
+        }
+        console.log("Congratulations! Your README file has been created!"); // If there is no error, this message will be logged.
+    });
+}
 
 // function to initialize program
 function init() {
