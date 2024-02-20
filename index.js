@@ -66,9 +66,15 @@ function writeToFile(fileName, data) { //This funtion will take the name of the 
 }
 
 // function to initialize program
-function init() {
+function init() { //
 
+    inquirer
+        .prompt(questions) //This function is a promisse that uses the "inquirer" package. The argument passed is the array of questions.
+        .then((input) => { //Input is the collection of answers given by the user. This is in the form of an object.
+            writeToFile("README.md", generateMarkdown(input)); // The "input" object is passed as an argument onto the generateMarkdow function and completes the string literal to form the desired file. The writeToFile will create the file and call it "README.md".
+        });
 }
+
 
 // function call to initialize program
 init();
